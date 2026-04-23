@@ -9,11 +9,25 @@ O **Sistema Web Seguro** é uma aplicação backend/frontend projetada sob medid
 
 O sistema mitiga ativamente os riscos apontados no **OWASP Top 10 2025**, segue os protocolos de verificação do **ASVS 5.0** e integra as estratégias de resiliência e monitoramento do **NIST Cybersecurity Framework 2.0**.
 
-## 🏗️ Arquitetura e Tecnologias
+## 🛠️ Arquitetura e Tecnologias
 * **Backend:** PHP 8.3+ (Strict Types habilitado).
 * **Banco de Dados:** PostgreSQL 15+ com Row-Level Security (RLS) e conexões blindadas via PDO.
 * **Frontend:** HTML5, CSS3, JavaScript (com restrições de CSP rigorosas).
 * **Criptografia:** Argon2id (Hashing de Senhas), AES-256-GCM (Criptografia em Repouso).
+
+## 🏗️ Cronograma e Entregáveis
+[ ] **Fase 1:** Modelagem e Endurecimento (Hardening) do BD: Desenho do schema
+PostgreSQL, criação de usuários de banco com privilégios mínimos, implementação
+de Row-Level Security (RLS) e Triggers de auditoria imutável.
+[ ] **Fase 2:** Motor de Identidade e Sessão: Desenvolvimento em PHP da autenticação,
+MFA, gestão de sessão e da verificação rigorosa de papéis administrativos no
+back-end.
+[ ] **Fase 3:** Lógica de Negócios e Criptografia: Implementação do CRUD utilizando o
+PDO de forma estrita, criptografando colunas sensíveis antes da inserção e validando
+todas as entradas.
+[ ] **Fase 4:** Verificação e Resposta (ASVS & NIST): Análise estática de código (SAST),
+análise de dependências e testes de penetração cobrindo os cenários do OWASP
+ASVS Nível 2.
 
 ## 🔒 Pilares de Segurança Implementados
 - **Gestão de Identidade:** Sistema de RBAC validado inteiramente no backend a cada requisição; proteção contra manipulação de exibição de identidade na interface.
