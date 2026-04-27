@@ -30,6 +30,10 @@ A condução do projeto deve ser dividida nas seguintes etapas principais:
 - **Resiliência de Sessão:** Cookies emitidos com flags `HttpOnly`, `Secure` e `SameSite=Strict`.
 - **Prevenção de Anomalias:** Tratamento global de exceções (*fail-closed*) para evitar vazamento de infraestrutura em erros de runtime.
 
+## 💼 Aplicação Baseada em caso de Estudo 
+
+- O sistema foi projetado se baseando em um caso de estudo de segurança de uma empresa fictícia de processos jurídicos que lida com documentos e informações confidênciais. O PDF pode ser encontrado junto aos requisitos na pasta Documentation
+
 ## 🚀 Instalação e Configuração (Ambiente de Desenvolvimento)
 
 ### Pré-requisitos
